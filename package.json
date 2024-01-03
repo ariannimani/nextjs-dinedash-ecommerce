@@ -1,20 +1,46 @@
 {
-  "name": "nextjs-dinedash-ecommerce",
+  "name": "@dinedash/nextjs-dinedash-ecommerce",
+  "version": "1.0.0",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "start:web": "turbo run start --scope=web",
+    "dev": "turbo run dev --parallel",
+    "gen:gql": "turbo run gen:gql",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "test:ci": "turbo run test:ci",
+    "tsc": "turbo run tsc",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "create:component": "hygen component new",
+    "cc": "pnpm create:component",
+    "build:storybook": "turbo run build-storybook",
+    "build:packages": "turbo run build --filter=\"!./apps/**\""
   },
-  "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
+  "lint-staged": {
+    "*.{ts,tsx}": "eslint --fix",
+    "*.{ts,tsx,html,scss,yml,md,json,js}": "prettier --write"
+  },
+  "devDependencies": { 
+    "@dinedash/eslint-config": "*",
+    "@dinedash/typescript-config": "*",
+    "eslint-plugin-storybook": "^0.6.15",
     "prettier": "^3.1.0",
-    "turbo": "latest"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "turbo": "latest",
+    "prop-types": "^15.8.1"
   },
   "packageManager": "pnpm@8.9.0",
   "engines": {
-    "node": ">=18"
+    "npm": "unsupported; use pnpm",
+    "yarn": "unsupported; use pnpm",
+    "node": ">=18",
+    "pnpm": ">=8.9.0"
   }
 }

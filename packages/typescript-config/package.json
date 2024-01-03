@@ -1,9 +1,17 @@
 {
-  "name": "@repo/typescript-config",
-  "version": "0.0.0",
-  "private": true,
-  "license": "MIT",
+  "name": "@dinedash/typescript-config",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "main": "index.js",
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "files": [
+    "base.json",
+    "components.json",
+    "web.json",
+    "graphql.json",
+    "logger.json",
+    "tracking.json"
+  ]
 }

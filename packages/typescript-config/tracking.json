@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "React Library",
+  "display": "Tracking",
   "extends": "./base.json",
   "compilerOptions": {
-    "jsx": "react-jsx",
+    "lib": ["ES2015", "DOM"]
   }
 }
