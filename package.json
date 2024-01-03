@@ -17,7 +17,9 @@
     "test:ci": "turbo run test:ci",
     "tsc": "turbo run tsc",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "create:icon": "hygen component icon",
     "create:component": "hygen component new",
+    "cci": "pnpm create:icon",
     "cc": "pnpm create:component",
     "build:storybook": "turbo run build-storybook",
     "build:packages": "turbo run build --filter=\"!./apps/**\""
@@ -26,10 +28,10 @@
     "*.{ts,tsx}": "eslint --fix",
     "*.{ts,tsx,html,scss,yml,md,json,js}": "prettier --write"
   },
-  "devDependencies": { 
+  "devDependencies": {
     "@dinedash/eslint-config": "*",
     "@dinedash/typescript-config": "*",
-    "@dinedash/prettier-config":"*",
+    "@dinedash/prettier-config": "*",
     "eslint-plugin-storybook": "^0.6.15",
     "prettier": "^3.1.0",
     "react": "^18.2.0",
