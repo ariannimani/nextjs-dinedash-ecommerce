@@ -1,2 +1,5 @@
 dist
 storybook-static
+
+_templates
+.eslintrc.js

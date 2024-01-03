@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
   ignorePatterns: ["apps/**", "packages/**"],
-  extends: ["@dinedash/frontend", "plugin:storybook/recommended"],
+  extends: ["plugin:storybook/recommended"],
   overrides: [
     {
       files: ["*.stories.*"],
@@ -28,4 +28,6 @@ module.exports = {
       { ignoreEnums: true, ignoreArrayIndexes: true },
     ],
   },
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint", "react"],
 };
