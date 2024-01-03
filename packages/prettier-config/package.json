@@ -1,0 +1,13 @@
+{
+    "name": "@dinedash/prettier-config",
+    "version": "1.0.0",
+    "license": "UNLICENSED",
+    "main": "index.js",
+    "publishConfig": {
+      "access": "public"
+    },
+    "files": [
+      "base.json"
+    ]
+  }
+  

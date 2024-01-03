@@ -29,6 +29,7 @@
   "devDependencies": { 
     "@dinedash/eslint-config": "*",
     "@dinedash/typescript-config": "*",
+    "@dinedash/prettier-config":"*",
     "eslint-plugin-storybook": "^0.6.15",
     "prettier": "^3.1.0",
     "react": "^18.2.0",

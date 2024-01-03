@@ -1,1 +1,1 @@
-module.exports = require("@dinedash/config-prettier");
+module.exports = require("@dinedash/prettier-config");
