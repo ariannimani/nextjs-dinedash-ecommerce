@@ -2,7 +2,9 @@
   "compilerOptions": {
     "lib": ["dom", "ES2015"],
     "outDir": "dist",
-    "baseUrl": "."
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
   },
   "extends": "@dinedash/typescript-config/components.json",
   "exclude": ["dist", "build", "node_modules"]

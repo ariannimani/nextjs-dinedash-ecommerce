@@ -1,9 +1,6 @@
-import type { MediaQuery, QueryCheck } from "@instamotion/theme";
-import { breakpoints as newBreakpoints } from "@instamotion/theme";
-import type {
-  FlattenInterpolation,
-  FlattenSimpleInterpolation,
-} from "styled-components";
+import type { MediaQuery, QueryCheck } from "@dinedash/theme";
+import { breakpoints as newBreakpoints } from "@dinedash/theme";
+import type { CSSProp } from "styled-components";
 import { css } from "styled-components";
 import { breakpoints } from "../constants";
 
@@ -24,9 +21,7 @@ const createQueryCheck = ({ minWidth, maxWidth }: QueryCheck): string => {
 export const createMediaQuery = (items: QueryCheck[]): MediaQuery => {
   const checkParams = items.map((query) => createQueryCheck(query)).join(", ");
 
-  return (
-    styles: FlattenSimpleInterpolation | FlattenInterpolation<any>,
-  ) => css`
+  return (styles: CSSProp) => css`
     @media ${checkParams} {
       ${styles}
     }
@@ -98,12 +93,6 @@ export const onlyDesktop = createMediaQuery([
 export const onlyLargeDesktop = createMediaQuery([
   {
     minWidth: breakpoints.largeDesktop.min,
-  },
-]);
-
-export const only4kResolution = createMediaQuery([
-  {
-    minWidth: breakpoints.fourKResolution.min,
   },
 ]);
 

@@ -1,8 +1,10 @@
 {
-    "extends": "./tsconfig.json",
-    "compilerOptions": {
-      "jsx": "react-jsx",
-      "sourceMap": true
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
     }
   }
-  
+}

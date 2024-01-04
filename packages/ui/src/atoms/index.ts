@@ -1,1 +1,1 @@
-export { LinkButtonWithIcon } from "./LinkButtonWithIcon/LinkButtonWithIcon";
+export { Button } from "./Button/Button";

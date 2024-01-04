@@ -1,23 +1,30 @@
-// @DEPRECATED use packages/ui/src/theme/breakpoints.ts instead
-// Reference: https://github.com/Instamotion/im-components2/blob/9cd109ef199579d7013999b4bae1877a026ffa49/packages/components/src/components/Theme/IMTheme/IMTheme.ts#L110
-
 const smallMobile = {
-  min: 360,
-  max: 424,
+  min: 320,
+  max: 359,
 };
 
 const mobile = {
   min: smallMobile.max + 1,
-  max: 575,
+  max: 424,
+};
+
+const largeMobile = {
+  min: mobile.max + 1,
+  max: 767,
 };
 
 const tablet = {
-  min: mobile.max + 1,
+  min: largeMobile.max + 1,
   max: 1023,
 };
 
-const desktop = {
+const smallDesktop = {
   min: tablet.max + 1,
+  max: 1279,
+};
+
+const desktop = {
+  min: smallDesktop.max + 1,
   max: 1439,
 };
 
@@ -26,15 +33,17 @@ const largeDesktop = {
   max: 2559,
 };
 
-const fourKResolution = {
+const xLargeDesktop = {
   min: largeDesktop.max + 1,
 };
 
 export const breakpoints = {
   smallMobile,
   mobile,
+  largeMobile,
   tablet,
+  smallDesktop,
   desktop,
   largeDesktop,
-  fourKResolution,
+  xLargeDesktop,
 };

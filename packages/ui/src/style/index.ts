@@ -1,3 +1,3 @@
 export * from "./constants";
-export * from "./GlobalStyle";
+export * from "./GlobalStyles";
 export * from "./mixins";
