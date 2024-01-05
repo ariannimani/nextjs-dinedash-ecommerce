@@ -3,12 +3,12 @@ import { fireEvent } from "@testing-library/react";
 import { Button, ButtonProps } from "./Button";
 import { render } from "../../helpers/tests";
 
-describe("Button component", () => {
-  const defaultProps: ButtonProps = {
-    onClick: jest.fn(),
-    variant: "primary",
-  };
+const defaultProps: ButtonProps = {
+  onClick: jest.fn(),
+  variant: "primary",
+};
 
+describe("Button component", () => {
   it("renders with children", () => {
     const { getByText } = render(
       <Button {...defaultProps}>Test Button</Button>,
