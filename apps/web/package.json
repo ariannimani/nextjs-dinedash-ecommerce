@@ -10,7 +10,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --max-warnings 0"
+    "test": "turbo run test",
+    "lint": "eslint . --max-warnings 0",
+    "dev:sb": "storybook dev -p 6006"
   },
   "dependencies": {
     "@dinedash/theme": "*",

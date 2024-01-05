@@ -23,7 +23,9 @@
     "cc": "pnpm create:component",
     "build:storybook": "turbo run build-storybook",
     "build:packages": "turbo run build --filter=\"!./apps/**\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build-storybook": "storybook build",
+    "dev:sb": "storybook dev -p 6006 --config-dir packages/ui/.storybook"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -49,15 +51,16 @@
     "@commitlint/config-conventional": "^18.4.3",
     "@dinedash/prettier-config": "workspace:^",
     "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.11.0",
     "cz-customizable": "^7.0.0",
     "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-storybook": "^0.6.15",
     "husky": "^8.0.3",
+    "inflection": "^3.0.0",
+    "jest": "^27.5.1",
     "lint-staged": "^15.2.0",
     "prettier": "^3.1.1",
-    "turbo": "^1.11.2",
-    "@typescript-eslint/parser": "^6.11.0",
-    "eslint-plugin-storybook": "^0.6.15",
-    "inflection": "^3.0.0"
+    "turbo": "^1.11.2"
   },
   "packageManager": "pnpm@8.9.0",
   "engines": {

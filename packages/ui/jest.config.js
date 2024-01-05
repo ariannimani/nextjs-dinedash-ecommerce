@@ -15,7 +15,7 @@ const reporters = isCI
 
 module.exports = {
   transform: {
-    "^.+\\.tsx?$": "ts-jest",
+    "^.+\\.tsx?$": "@swc/jest",
   },
   testEnvironment: "jsdom",
   collectCoverage: false,

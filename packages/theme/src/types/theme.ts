@@ -1,5 +1,5 @@
 import { shadows } from "./../shadows";
-import { CSSProp } from "styled-components";
+import type { CSSProp } from "styled-components";
 
 type BasicColorShade = string;
 

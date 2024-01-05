@@ -5,6 +5,9 @@
     "baseUrl": ".",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true
+    // "paths": {
+    //   "@/*": ["./*"]
+    // }
   },
   "extends": "@dinedash/typescript-config/components.json",
   "exclude": ["dist", "build", "node_modules"]

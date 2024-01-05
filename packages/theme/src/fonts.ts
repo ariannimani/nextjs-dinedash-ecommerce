@@ -19,18 +19,18 @@ export const SatoshiVariableBlack = {
   fontWeight: "900",
 };
 
-export const HelveticaNeueSansSerif = {
-  fontFamily: "HelveticaNeue, sans-serif",
+export const InterSansSerif = {
+  fontFamily: "Inter, sans-serif",
   fontWeight: "400",
 };
 
-export const HelveticaNeueSansMedium = {
-  fontFamily: "HelveticaNeue, sans-serif",
+export const InterSansMedium = {
+  fontFamily: "Inter, sans-serif",
   fontWeight: "500",
 };
 
-export const HelveticaNeueSansBold = {
-  fontFamily: "HelveticaNeue, sans-serif",
+export const InterSansBold = {
+  fontFamily: "Inter, sans-serif",
   fontWeight: "700",
 };
 
@@ -57,9 +57,9 @@ export const fonts = {
     black: SatoshiVariableBlack,
   },
   secondary: {
-    regular: HelveticaNeueSansSerif,
-    medium: HelveticaNeueSansMedium,
-    bold: HelveticaNeueSansBold,
+    regular: InterSansSerif,
+    medium: InterSansMedium,
+    bold: InterSansBold,
   },
   ternary: {
     regular: RobotoRegular,
