@@ -33,7 +33,7 @@ export function Header(): JSX.Element {
             <S.MenuItem testId={`menu-item-${index}`}>{item}</S.MenuItem>
           ))}
         </S.MenuWrapper>
-        <Input placeholder={SEARCH_PLACEHOLDER} />
+        <Input placeholder={SEARCH_PLACEHOLDER} icon />
       </S.WrapperDesktopOnly>
 
       <S.MenuButtonMobileOnly>
@@ -44,7 +44,7 @@ export function Header(): JSX.Element {
 
       <S.FlexWrapper>
         <IconButton testId="cart-icon-button">
-          <Badge>3</Badge>
+          <S.BadgeItem>3</S.BadgeItem>
           <CartIcon />
         </IconButton>
         <IconButton testId="user-icon-button">

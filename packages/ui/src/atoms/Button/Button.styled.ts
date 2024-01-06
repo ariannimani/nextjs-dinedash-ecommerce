@@ -19,12 +19,24 @@ const getButtonVariant = (theme: DefaultTheme) => ({
   `,
   secondary: css`
     background-color: ${theme.palette.colors.white};
-    color: ${theme.palette.colors.black};
-    border: 1px solid ${theme.palette.borders.dark};
+    border: 1px solid ${theme.palette.colors.gray[93]};
+    color: ${theme.palette.colors.gray[48]};
 
     &:hover {
-      color: ${theme.palette.colors.gray[48]};
-      border: 1px solid ${theme.palette.colors.gray[93]};
+      color: ${theme.palette.colors.black};
+      border: 1px solid ${theme.palette.borders.dark};
+    }
+  `,
+
+  tertiary: css`
+    background-color: ${theme.palette.colors.pink.medium};
+    color: ${theme.palette.colors.white};
+
+    &:hover {
+      background-color: rgba(
+        ${hexToRgb(theme.palette.colors.pink.medium)},
+        0.7
+      );
     }
   `,
 });
@@ -32,16 +44,16 @@ const getButtonVariant = (theme: DefaultTheme) => ({
 export const Button = styled.button<ButtonProps>(
   ({ theme, variant }) => css`
     display: inline-flex;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 100%;
+    height: 48px;
+    padding: 10px;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 6px;
     border: none;
-    border-radius: 0.375rem;
-    cursor: pointer;
-    padding: 0.625rem;
-    width: 100%;
-    height: 2rem;
-    white-space: nowrap;
+    border-radius: 6px;
     color: ${theme.palette.colors.black};
 
     ${getButtonVariant(theme)[variant]};

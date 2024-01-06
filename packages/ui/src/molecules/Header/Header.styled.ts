@@ -1,4 +1,4 @@
-import { Typography } from "../../atoms";
+import { Badge, Typography } from "../../atoms";
 import styled, { css } from "styled-components";
 
 export const Container = styled.div(
@@ -9,6 +9,7 @@ export const Container = styled.div(
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    min-width: fit-content;
 
     ${theme.breakpoints.fromDesktopSmall(css`
       display: flex;
@@ -70,3 +71,9 @@ export const MenuButtonMobileOnly = styled.div(
     `)};
   `,
 );
+
+export const BadgeItem = styled(Badge)`
+  position: absolute;
+  top: -10px;
+  right: -5px;
+`;

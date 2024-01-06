@@ -3,8 +3,7 @@ import styled, { css } from "styled-components";
 export const Container = styled.div(
   ({ theme }) => css`
     display: flex;
-    width: 296px;
-    height: 24px;
+    height: 40px;
     padding: 8px 52px 8px 12px;
     align-items: center;
     flex-shrink: 0;

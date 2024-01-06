@@ -2,7 +2,7 @@ import React from "react";
 import * as S from "./Typography.styled";
 
 export interface TypographyProps {
-  children: string;
+  children: React.ReactNode;
   testId: string;
   className?: string;
 }

@@ -7,7 +7,7 @@ export interface ButtonProps {
   testId?: string;
   style?: CSSProperties;
   onClick: MouseEventHandler<HTMLButtonElement>;
-  variant: "primary" | "secondary";
+  variant: "primary" | "secondary" | "tertiary";
   className?: string;
   icon?: React.ReactNode;
   children?: React.ReactNode;

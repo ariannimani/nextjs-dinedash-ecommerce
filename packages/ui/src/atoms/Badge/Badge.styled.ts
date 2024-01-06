@@ -13,9 +13,6 @@ export const Badge = styled.div(
     flex-shrink: 0;
     border-radius: 12px;
     background-color: ${theme.palette.colors.pink.medium};
-    position: absolute;
-    top: -10px;
-    right: -5px;
     font-size: 12px;
     ${theme.fonts.primary.black}
   `,

@@ -8,5 +8,7 @@ export const Typography = styled.p(
     font-style: normal;
     line-height: normal;
     letter-spacing: 0.16px;
+    margin: 0;
+    padding: 0;
   `,
 );
