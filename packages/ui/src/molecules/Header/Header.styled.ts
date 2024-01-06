@@ -1,4 +1,4 @@
-import { Badge, IconButton, Typography } from "../../atoms";
+import { Typography } from "../../atoms";
 import styled, { css } from "styled-components";
 
 export const Container = styled.div(
@@ -48,6 +48,15 @@ export const MenuWrapper = styled(FlexWrapper)`
 export const MenuItem = styled(Typography)(
   ({ theme }) => css`
     color: ${theme.palette.text.secondary};
+    cursor: pointer;
+
+    &:hover {
+      color: ${theme.palette.text.primary};
+    }
+
+    &:active {
+      color: ${theme.palette.text.primary};
+    }
   `,
 );
 

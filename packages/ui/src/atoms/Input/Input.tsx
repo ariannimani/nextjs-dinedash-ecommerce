@@ -5,11 +5,16 @@ import { SearchIcon } from "../../icons";
 export interface InputProps {
   testId?: string;
   placeholder?: string;
+  className?: string;
 }
 
-export function Input({ testId, placeholder }: InputProps): JSX.Element {
+export function Input({
+  testId,
+  placeholder,
+  className,
+}: InputProps): JSX.Element {
   return (
-    <S.Container data-testid={testId}>
+    <S.Container data-testid={testId} className={className}>
       <SearchIcon />
       <S.Input placeholder={placeholder} />
     </S.Container>
