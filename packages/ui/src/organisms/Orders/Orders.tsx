@@ -1,8 +1,8 @@
 import React from "react";
 import * as S from "./Orders.styled";
 import { OrderCard } from "../../molecules";
-import { Button } from "../../atoms";
-import { ArrowForwardIcon } from "../../icons";
+import { Button, Typography } from "../../atoms";
+import { ArrowForwardIcon, NoOrderIcon } from "../../icons";
 
 export interface OrdersProps {
   testId?: string;
@@ -26,9 +26,14 @@ export function Orders({ testId, className }: OrdersProps): JSX.Element {
           </S.CategoryButton>
         ))}
       </S.FlexButtons>
-      {ORDERS.map((order) => (
-        <OrderCard key={order} />
-      ))}
+      {ORDERS.length > 0 ? (
+        ORDERS.map((order) => <OrderCard key={order} />)
+      ) : (
+        <S.NoOrdersContainer>
+          <NoOrderIcon />
+          <Typography testId="no-orders">No orders yet</Typography>
+        </S.NoOrdersContainer>
+      )}
       <S.MoreOrdersButton variant="secondary" onClick={() => {}}>
         Show more <ArrowForwardIcon />
       </S.MoreOrdersButton>

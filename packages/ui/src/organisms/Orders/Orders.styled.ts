@@ -62,3 +62,11 @@ export const MoreOrdersButton = styled(Button)(
     color: ${theme.palette.text.primary};
   `,
 );
+
+export const NoOrdersContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;

@@ -34,3 +34,5 @@ export { default as TruckSmallOutline } from "./TruckSmallOutline/TruckSmallOutl
 export { default as TwitterIcon } from "./TwitterIcon/TwitterIcon";
 export { default as UserIcon } from "./UserIcon/UserIcon";
 export { default as ArrowForwardIcon } from "./ArrowForwardIcon/ArrowForwardIcon";
+export {  default as NoOrderIcon } from './NoOrderIcon/NoOrderIcon';
+
