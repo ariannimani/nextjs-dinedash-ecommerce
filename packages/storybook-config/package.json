@@ -1,0 +1,19 @@
+{
+  "name": "@dinedash/storybook-config",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "tsc": "tsc --noEmit",
+    "dev": "tsup src/index.ts --format esm,cjs --watch --dts --splitting",
+    "build": "tsup src/index.ts --format esm,cjs --dts --splitting"
+  },
+  "devDependencies": {
+    "@dinedash/theme": "1.0.0",
+    "tsup": "^6.0.1",
+    "react": "^18.2.0",
+    "typescript": "^5.2.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}

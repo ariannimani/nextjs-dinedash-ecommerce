@@ -18,6 +18,7 @@
   "devDependencies": {
     "@dinedash/eslint-config": "workspace:*",
     "@dinedash/typescript-config": "workspace:*",
+    "@dinedash/storybook-config": "workspace:*",
     "@next/eslint-plugin-next": "^14.0.4",
     "@types/eslint": "^8.56.1",
     "@types/node": "^20.10.6",

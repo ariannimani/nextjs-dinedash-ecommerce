@@ -2,7 +2,7 @@ import React from "react";
 import { Decorator } from "@storybook/react";
 import { ThemeProvider } from "@dinedash/theme";
 
-const withTheme: Decorator = (StoryFn) => {
+export const withTheme: Decorator = (StoryFn) => {
   return (
     <ThemeProvider>
       <StoryFn />
