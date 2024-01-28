@@ -1,7 +1,15 @@
 {
-  "extends": "@repo/typescript-config/react-library.json",
+  "extends": "@dinedash/typescript-config/react-library.json",
   "compilerOptions": {
-    "outDir": "dist"
+    "lib": ["dom", "ES2015"],
+    "types": ["node", "jest", "@testing-library/jest-dom"],
+    "outDir": "dist",
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]

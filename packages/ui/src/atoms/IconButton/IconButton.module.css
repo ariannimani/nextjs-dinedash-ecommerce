@@ -1,0 +1,33 @@
+.icon-button {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  position: relative;
+  cursor: pointer;
+  border: none;
+}
+
+.icon-button-primary {
+  background-color: var(--gray-93);
+  color: var(--text-primary);
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.icon-button-secondary {
+  background-color: var(--secondary);
+  border: 1px solid var(--gray-93);
+  color: var(--gray-48);
+
+  &:hover {
+    color: var(--text-primary);
+    border: 1px solid var(--primary);
+  }
+}

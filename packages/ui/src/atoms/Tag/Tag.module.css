@@ -1,0 +1,31 @@
+/* Tagtag.module.css */
+
+.container {
+  display: flex;
+  width: fit-content;
+  height: 32px;
+  padding: 10px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.tag-primary {
+  background-color: var(--primary);
+  color: var(--text-main);
+
+  .svg {
+    color: var(--text-main);
+  }
+}
+
+.tag-secondary {
+  background-color: var(--pink-light);
+  color: var(--text-primary);
+
+  .svg {
+    color: var(--pink-medium);
+  }
+}

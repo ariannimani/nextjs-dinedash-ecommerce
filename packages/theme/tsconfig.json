@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "lib": ["dom", "esnext"],
+    "module": "NodeNext",
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "exclude": ["node_modules"],
+  "extends": "@dinedash/typescript-config/base.json",
+  "include": ["src"]
+}

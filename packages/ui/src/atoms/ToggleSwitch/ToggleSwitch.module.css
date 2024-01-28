@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-button {
+  width: 43px;
+  height: 16px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: var(--primary);
+}
+
+.toggle-ball {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  transition: transform 0.3s ease;
+  transform: translateX(0);
+}
+
+.active {
+  transform: translateX(27px);
+}

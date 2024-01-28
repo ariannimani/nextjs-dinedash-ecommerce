@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  padding: 8px 12px 8px 12px;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 6px;
+  gap: 8px;
+  border: 1.5px solid var(--gray-93);
+  color: var(--gray-68);
+
+  &:focus-within {
+    border: 1.5px solid var(--primary);
+  }
+}
+
+.textarea {
+  height: 150px;
+  border: none;
+  width: 100%;
+  color: var(--gray-68);
+  outline: none;
+  resize: none;
+
+  &::placeholder {
+    color: var(--gray-68);
+  }
+}

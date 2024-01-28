@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 12px;
+  background-color: var(--secondary);
+  border: 1px solid var(--gray-96);
+  max-width: 265px;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.content {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--text-secondary);
+}
+
+.button {
+  color: var(--text-main);
+}

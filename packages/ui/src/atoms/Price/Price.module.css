@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background-color: var(--pink-light);
+  cursor: pointer;
+}

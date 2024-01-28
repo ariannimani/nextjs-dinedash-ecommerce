@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 56px;
+  background-color: var(--primary);
+  color: var(--text-main);
+}
+
+.container svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 56px;
+    height: 56px;
+  }
+
+  .container svg {
+    width: 24px;
+    height: 24px;
+  }
+}

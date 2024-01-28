@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--text-primary);
+  }
+}
